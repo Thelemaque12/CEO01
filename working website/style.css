@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 11, 2020, 8:58:27 PM
+    Author     : simeu
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+*{
+    margin: 0;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #343A40;
+    transition: all ease-in 0.4s;
+}
+.navbar{
+    padding-top: 60px;
+    width: 100%;
+    visibility: hidden;
+    transition: all ease-in-out 0.3s;
+    
+}
+.navbar li {
+    display: block;
+    text-align: center;
+    list-style: none; 
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 3.5;
+    font-size: 18px;
+    
+    
+}
+.hamburger{
+    font-size: 24px;
+    color: white;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.hamburger:hover{
+    color: tomato;
+    transition: ease 0.3s;
+}
+/* create show class */
+.show{
+    height: 360px;
+}
+/*image section */
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.container img{
+    width: 400px;
+    border-radius: 350%;
+}
+.para{
+    width: 500px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 1.5;
+    color:tomato;
+    font-size: 24px;
+}
