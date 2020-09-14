@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap");
+* {
+  margin: 0;
+}
+/*navigation bar */
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  transition: all ease 0.3s;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  background-color: #1e272b;
+  position: fixed;
+  min-width: 100vw;
+  z-index: 1;
+  height: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all ease-in-out 0.3s;
+}
+.cta {
+  padding-left: 80px;
+}
+.nav-links li {
+  display: inline-block;
+}
+.nav-links a {
+  padding: 5px;
+  margin-right: 20px;
+}
+header button {
+  background-color: tomato;
+  border: none;
+  width: 80px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+header a:hover {
+  color: tomato;
+}
+header a {
+  color: white;
+  padding-right: 60px;
+}
+.last {
+  color: tomato;
+}
+/*section 1 intro */
+.section-1 {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 110px;
+  line-height: 1.5;
+  font-weight: 500;
+  width: 500px;
+}
+
+.btn-right {
+  padding: 0 20px;
+}
+.button button {
+  background-color: tomato;
+  border: none;
+  width: 160px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.button {
+  padding-top: 20px;
+}
+/*section 2 skills */
+.section-2 {
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeefef;
+  gap: 200px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 240px;
+  grid-template-rows: 180px 180px 80px;
+  grid-template-areas: "image" "text" "button";
+  font-family: "Montserrat", sans-serif;
+  border-radius: 18px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.card-image {
+  grid-area: image;
+  background: url("java.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  border-bottom: 0.5px solid rgb(218, 212, 212);
+  background-position: center;
+}
+.card-image1 {
+  grid-area: image;
+  background: url("todo-list.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  border-bottom: 0.5px solid rgb(218, 212, 212);
+  background-position: center;
+}
+.card-image2 {
+  grid-area: image;
+  background: url("github-finder.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  border-bottom: 0.5px solid rgb(218, 212, 212);
+  background-position: center;
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-button {
+  grid-area: button;
+}
+.card-button button {
+  width: 100%;
+  background-color: tomato;
+  border: none;
+  height: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.card-button a {
+  color: white;
+  font-size: 20px;
+}
+.card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 10px;
+}
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+  font-family: sans-serif;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* about me */
+
+.container-contact {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-box {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-box a {
+  color: tomato;
+  margin-left: 20px;
+}
+.contact-h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+/*hamburger menu*/
+
+
